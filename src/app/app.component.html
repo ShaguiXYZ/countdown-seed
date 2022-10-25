@@ -1,0 +1,13 @@
+<div class="app">
+  <p class="center" *ngIf="!expired">
+    ...Move the mouse over me to reset the countdown...
+  </p>
+
+  <div class="countdown">
+    <p class="center">{{ counter }}</p>
+  </div>
+
+  <div class="center">
+    <button *ngIf="expired" (click)="start()">Restart Countdown</button>
+  </div>
+</div>
